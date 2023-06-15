@@ -1,10 +1,11 @@
 <template>
   <div>
-    my nuxt shop
+    <Header />
+    <RouterView />
+    <Footer />
   </div>
 </template>
 
-<script setup>
-
+<script>
 console.log('hello')
 </script>
