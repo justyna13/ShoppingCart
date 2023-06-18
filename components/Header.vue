@@ -2,23 +2,22 @@
   <nav>
     <div class="nav-inner">
 <!--      logo-->
-      <div class="logo" @click="$router.push('/')">
+      <NuxtLink to="/" class="logo">
         <img src="~images/nav-logo.jpg" alt="Company logo">
-      </div>
+      </NuxtLink>
 <!--      links-->
       <div class="links">
-        <a href="#">About Us</a>
-        <a href="#">Women</a>
-        <a href="#">Men</a>
-        <a href="#">Kids</a>
-        <a href="#">Accesories</a>
+        <NuxtLink to="/about-us">About Us</NuxtLink>
+        <NuxtLink to="/products/women">Women</NuxtLink>
+        <NuxtLink to="/products/men">Men</NuxtLink>
+        <NuxtLink to="/products/kids">Kids</NuxtLink>
+        <NuxtLink to="/products/accessories">Accesories</NuxtLink>
       </div>
 <!--      icons-->
       <div class="icons">
-        <button @click="$router.push('/cart')">
-
+        <NuxtLink to="cart">
           <span class="mdi mdi-cart"></span>
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </nav>

@@ -1,11 +1,12 @@
 <template>
   <div>
-    <Header />
-    <RouterView />
-    <Footer />
+    <NuxtLayout>
+      <Header />
+      <NuxtPage />
+      <Footer />
+    </NuxtLayout>
   </div>
 </template>
 
 <script>
-console.log('hello')
 </script>
