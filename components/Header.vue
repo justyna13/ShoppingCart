@@ -6,11 +6,21 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
-        <li><NuxtLink to="/products/women">Women</NuxtLink></li>
-        <li><NuxtLink to="/products/men">Men</NuxtLink></li>
-        <li><NuxtLink to="/products/kids">Kids</NuxtLink></li>
-        <li><NuxtLink to="/products/accessories">Accesories</NuxtLink></li>
+        <li>
+          <NuxtLink to="/about-us">About Us</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/products/women">Women</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/products/men">Men</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/products/kids">Kids</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/products/accessories">Accesories</NuxtLink>
+        </li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -29,20 +39,23 @@
 </script>
 
 <style lang="scss" scoped>
-header{
+header {
   background: #fff;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 666;
+
   .logo {
     margin: 10px 0;
     width: 80px;
   }
+
   .icons {
     position: absolute;
     right: 30px;
     top: 30px;
+
     span {
       font-size: 26px;
       color: black;
@@ -50,8 +63,10 @@ header{
     }
   }
 }
+
 .nav-toggle {
   display: none;
+
   &-label {
     position: absolute;
     top: 0;
@@ -61,6 +76,7 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+
     span,
     span:before,
     span:after {
@@ -70,35 +86,44 @@ header{
       width: 2em;
       position: relative;
     }
+
     span:before,
     span:after {
-      content:'';
+      content: '';
       position: absolute;
     }
+
     span:before {
       bottom: 7px;
     }
+
     span:after {
       top: 7px;
     }
   }
+
   &:checked ~ nav {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
+
   &:checked ~ nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
   }
-  &:checked .nav-toggle-label span{
+
+  &:checked .nav-toggle-label span {
     opacity: 0;
   }
-  &:checked span::before{
+
+  &:checked span::before {
     transform: rotate(45deg);
   }
-  &:checked span::after{
+
+  &:checked span::after {
     transform: rotate(-45deg);
   }
 }
+
 nav {
   position: absolute;
   text-align: left;
@@ -109,15 +134,18 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
   li {
     margin-bottom: 1em;
     margin-left: 1em;
   }
+
   a {
     color: #333;
     text-decoration: none;
@@ -130,15 +158,17 @@ nav {
     }
   }
 }
+
 @media screen and (min-width: 1200px) {
-  header{
+  header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    .logo{
+
+    .logo {
       grid-column: 2 / span 1;
     }
   }
-  .nav-toggle-label{
+  .nav-toggle-label {
     display: none;
   }
   nav {
@@ -147,18 +177,22 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     ul {
       display: flex;
     }
+
     li {
       margin-left: 3em;
       margin-bottom: 0;
     }
+
     a {
       opacity: 1;
       position: relative;
+
       &:before {
-        content:'';
+        content: '';
         display: block;
         height: 4px;
         background: #DCBD6B;
@@ -171,8 +205,9 @@ nav {
         transform-origin: right;
         transition: transform ease-in-out 250ms;
       }
+
       &:hover:before {
-        transform: scale(1,1);
+        transform: scale(1, 1);
       }
     }
   }
