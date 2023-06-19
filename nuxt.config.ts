@@ -8,6 +8,12 @@ export default defineNuxtConfig({
   modules: [
     "@pinia/nuxt"
   ],
+  pinia: {
+    autoImports: [
+      'defineStore',
+      ['defineStore', 'definePiniaStore'],
+    ]
+  },
   alias: {
     "images": resolve(__dirname, "./assets/images"),
     "@": resolve(__dirname, "/")
