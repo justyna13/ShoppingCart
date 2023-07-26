@@ -13,7 +13,7 @@ export const useCartStore = defineStore("cartContent", () => {
     products.value.map(product => {toPay += product.price})
     return toPay
   })
-  function addProductToCart(product) {
+  function addProductToCart(product: Product) {
     products.value.push(product)
   }
 
