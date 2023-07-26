@@ -7,9 +7,6 @@
     <nav>
       <ul>
         <li>
-          <NuxtLink to="/about-us">About Us</NuxtLink>
-        </li>
-        <li>
           <NuxtLink to="/products/women">Women</NuxtLink>
         </li>
         <li>
@@ -20,6 +17,9 @@
         </li>
         <li>
           <NuxtLink to="/products/accessories">Accesories</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about-us">About Us</NuxtLink>
         </li>
       </ul>
     </nav>

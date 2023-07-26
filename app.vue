@@ -2,7 +2,9 @@
   <div>
     <NuxtLayout>
       <Header />
-      <NuxtPage />
+      <div style="padding-top: 74px;">
+        <NuxtPage />
+      </div>
       <Footer />
     </NuxtLayout>
   </div>
