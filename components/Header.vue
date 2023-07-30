@@ -28,7 +28,7 @@
     </label>
     <!--      icons-->
     <div class="icons">
-      <NuxtLink to="cart">
+      <NuxtLink to="/cart">
         <span class="mdi mdi-cart"></span>
       </NuxtLink>
     </div>

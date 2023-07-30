@@ -9,7 +9,7 @@
       <div id="product-front">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt.png" alt=""/>
         <div class="image_overlay"></div>
-        <div id="view_details">View details</div>
+        <NuxtLink id="view_details" to="/offer/1233">View details</NuxtLink>
         <div class="stats">
           <div class="stats-container">
             <span class="product_price">$39</span>
@@ -178,6 +178,7 @@ const addProductToCard = () => {
   padding: 10px 0;
   width: 172px;
   opacity: 0;
+  text-decoration: none;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
