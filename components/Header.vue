@@ -18,9 +18,6 @@
         <li>
           <NuxtLink to="/products/accessories">Accesories</NuxtLink>
         </li>
-        <li>
-          <NuxtLink to="/about-us">About Us</NuxtLink>
-        </li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
