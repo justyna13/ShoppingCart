@@ -50,3 +50,16 @@ table {
   width: 80%;
   margin: auto;
 }
+
+button {
+  cursor: pointer
+}
+
+input,
+textarea {
+  outline: 0 none
+}
+
+textarea {
+  resize: none
+}
